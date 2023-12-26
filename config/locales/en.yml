@@ -1,0 +1,78 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+    app_title: Spotifay
+
+    home:
+      home:
+        title: Spotifay
+        paragrahp: The best platform to listen your music, add favourite and add notes to your music.
+                    There is no ads, no play limit and you can add unlimited songs!
+                    The best thing about Spotifay is free you dont need to pay an additional charge.
+                    Have fun using Spotifay :)
+      contact:
+        title: Contact Me
+        contact_us: Please complete form to get in touch with me!
+        emailp: You can also send an email. My email is og00209@surrey.ac.uk.
+        name: "Name:"
+        enter_name: Please enter your name
+        email: "Email:"
+        enter_email: Please enter your email address
+        telephone: "Telephone:"
+        enter_telephone: Please enter your telephone number
+        message: "Message:"
+        enter_message: Please explain your problem
+        submit: Contact Me!
+
+      request_contact:
+        no_email:  Email address should not be empty.
+        email_sent: Thank you for your query. I will message you as soon as I can.
+
+      about:
+        aboutp: Hello my name is Oguz Gokyuzu I am the creator of Spotifay. I am 20 years old and I study Computer Science
+                  at University of Surrey. I am originally from Turkey but I live in United Kingdom to finish my university.
+                  I created this web app to give people a better experience than any other music apps do and help people that
+                  cannot afford premium membership. Your thoughts and problems are really important for me.
+                  I will do my best to answer your questions and your thoughts. We will make this app better together so dont
+                  hesitate to contact me. You can either send an email or use the contact section to get in touch with me. Enjoy your free
+                  unlimited music!
+    favorites:
+      index:
+        favoritep: Your favorites are listed here.
+
+    songs:
+      index:
+        songp: Welcome to your songs. You can add, delete, add it to your favourites and even add notes to your songs.
+
+    notes:
+      index:
+        notep: Your notes are listed here.

@@ -1,0 +1,128 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$font: 'Work Sans', sans-serif;
+$color: #222;
+
+body {
+  font-family: $font;
+  background-color: $color;
+  font-weight: bold;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header {
+  background: #006400;
+  height: 75px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+h1.spotifay {
+
+
+  a {
+    float:left;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding-top: 7px;
+  }
+
+  a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: white;
+
+    position: absolute;
+    top: 0%;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+  }
+
+  a:hover::before {
+    width: 100%;
+  }
+}
+
+header nav li.navbar {
+  display: inline-block;
+  margin-left: 60px;
+  padding-top: 20px;
+  font-size: 15px;
+
+  position: relative;
+}
+
+li.menuoptions {
+  color: white;
+  text-decoration: none;
+  
+}
+
+nav a:hover {
+  color: white;
+}
+
+header nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: white;
+
+  position: absolute;
+  top: 0%;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+header nav a:hover::before {
+  width: 100%;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid white;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+footer p {
+  float: left;
+}
